@@ -1,0 +1,10 @@
+<% if model.errors.any? %>
+  <div id="error_explanation">
+
+    <ul class="mb-0">
+    <% model.errors.full_messages.each do |massage| %>
+      <li><%= massage %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
